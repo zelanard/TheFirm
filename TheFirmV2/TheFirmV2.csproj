@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,22 +46,49 @@
   <ItemGroup>
     <Compile Include="Contorl\Ctrl.cs" />
     <Compile Include="Model\Employees\Leader.cs" />
+    <Compile Include="Model\Employees\Leaders\AdministrationLeader.cs" />
+    <Compile Include="Model\Employees\Leaders\HRLeader.cs" />
+    <Compile Include="Model\Employees\Leaders\StaffLeader.cs" />
     <Compile Include="Model\Employees\Officer.cs" />
     <Compile Include="Model\Employees\Staff.cs" />
     <Compile Include="Model\Employees\Staff\Administration.cs" />
     <Compile Include="Model\Employees\Officers\CEO.cs" />
     <Compile Include="Model\Employees\Officers\CFO.cs" />
-    <Compile Include="Model\Employees\Managers\Cheif.cs" />
+    <Compile Include="Model\Employees\Leaders\Cheif.cs" />
     <Compile Include="Model\Employees\Officers\COO.cs" />
     <Compile Include="Model\Employees\Employee.cs" />
     <Compile Include="Model\Employees\Staff\HumanResource.cs" />
-    <Compile Include="Model\Employees\Managers\Manager.cs" />
+    <Compile Include="Model\Employees\Leaders\Manager.cs" />
+    <Compile Include="Model\Employees\Worker.cs" />
+    <Compile Include="Model\Employees\Workers\LogisticsWorker.cs" />
+    <Compile Include="Model\Employees\Workers\OfficeWorker.cs" />
+    <Compile Include="Model\Employees\Workers\Technician.cs" />
+    <Compile Include="Model\Equipment\DirectorCar.cs" />
+    <Compile Include="Model\Equipment\Uniform.cs" />
+    <Compile Include="Model\Equipment\WorkCar.cs" />
+    <Compile Include="Model\Equipment\WorkComputer.cs" />
+    <Compile Include="Model\Equipment\WorkPhone.cs" />
+    <Compile Include="Model\Equipment\WorkStation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="View\ConsoleWriter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheFirmV2.drawio.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
